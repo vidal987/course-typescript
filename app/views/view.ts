@@ -1,4 +1,3 @@
-
 export abstract class View<T>{
 
     // o modificador protected permite com oque os filhos 
@@ -11,11 +10,10 @@ export abstract class View<T>{
 
     //Obriga as classes filhas implementar o método
     //OBRIGAÇÃO DA CLASSE FILHA DEFINIR 
-    abstract template(model: T): string;
-
+    protected abstract template(model: T): string;
 
     //OBRIGAÇÃO DA CLASSE PAI DEFINIR O QUE OCORRE 
-    update(model: T) : void {
+    public update(model: T) : void {
         const template = this.template(model);
         this.elemento.innerHTML = template;
     }
