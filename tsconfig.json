@@ -1,0 +1,15 @@
+{
+    // opcoes de complicacao do ts
+    "compilerOptions": {
+        //outDir para onde ira os arquivos compilados
+        "outDir": "dist/js",
+        //Versão que eu quero que o ts compile meu JS
+        "target": "ES6",
+        //Config que não gera o arquivo JS enquanto teu arquivo Ts está com problema
+        "noEmitOnError": true,
+        //Desabilita o Any como tipo implicito
+        "noImplicitAny": true
+    },
+    //Quais pastas e arquivos eu quero que o compilador compile 
+    "include": ["app/**/*"],
+}
